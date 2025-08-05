@@ -1,6 +1,6 @@
 <template>
-    <div>Show</div>
-    <Link href="/">IndexPage</Link>
+  <div>Show</div>
+  <Link href="/">IndexPage</Link>
 </template>
 
 <script setup>

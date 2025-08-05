@@ -1,9 +1,9 @@
 <template>
-    <Link href="/">IndexPage</Link>&nbsp;
-    <Link href="/hello">ShowPage</Link>
-    <div>The page with time {{ timer }}</div>
+  <Link href="/">IndexPage</Link>&nbsp;
+  <Link href="/hello">ShowPage</Link>
+  <div>The page with time {{ timer }}</div>
 
-    <slot>default</slot>
+  <slot>default</slot>
 </template>
 
 <script setup>
