@@ -1,10 +1,15 @@
 <template>
     <Link href="/">IndexPage</Link>&nbsp;
     <Link href="/hello">ShowPage</Link>
+    <div>The page with time {{ timer }}</div>
 
     <slot>default</slot>
 </template>
 
 <script setup>
     import {Link} from '@inertiajs/vue3'
+    import {ref} from 'vue'
+
+    const timer = ref(0)
+    setInterval(() => timer.value++, 1000)
 </script>
