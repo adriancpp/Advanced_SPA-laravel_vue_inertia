@@ -1,12 +1,11 @@
 <template>
   <Link href="/">IndexPage</Link>&nbsp;
-  <Link href="/hello">ShowPage</Link>
+  <Link href="/hello">ShowPage</Link>&nbsp;
+  <Link href="/listing">List</Link>&nbsp;
+  <Link href="/listing/create">Create</Link>
   <!-- <div>The page with time {{ timer }}</div> -->
   <div v-if="flashSuccess" class="success">
     {{ flashSuccess }}
-  </div>
-  <div>
-    {{ y }}
   </div>
 
   <slot>default</slot>
@@ -14,10 +13,7 @@
 
 <script setup>
 import {Link, usePage} from '@inertiajs/vue3'
-import { ref, computed } from 'vue'
-
-const x = ref(0)
-const y = computed(() => x.value * 2)
+import { computed } from 'vue'
 
 // page.props.value.flash.success
 const page = usePage()
