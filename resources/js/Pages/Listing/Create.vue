@@ -74,6 +74,7 @@
 
 <script setup>
 import { useForm } from '@inertiajs/vue3'
+import { route } from 'ziggy'
 
 const form = useForm({
   beds: 0,
@@ -85,7 +86,7 @@ const form = useForm({
   street_nr: null,
   price: 0,
 })
-const create = () => form.post('/listing')
+const create = () => form.post(route('listing.store'))
 </script>
 
 <style scoped>
