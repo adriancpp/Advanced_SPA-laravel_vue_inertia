@@ -1,6 +1,4 @@
 <template>
-  <Link href="/">IndexPage</Link>&nbsp;
-  <Link href="/hello">ShowPage</Link>&nbsp;
   <Link href="/listing">List</Link>&nbsp;
   <Link href="/listing/create">Create</Link>
   <!-- <div>The page with time {{ timer }}</div> -->
