@@ -1,72 +1,72 @@
 <template>
   <form @submit.prevent="update">
-    <div>
-      <div>
+    <div class="grid grid-cols-6 gap-4">
+      <div class="col-span-2">
         <label>Beds</label>
-        <input v-model.number="form.beds" type="text" />
+        <input v-model.number="form.beds" type="text" class="input" />
         <div v-if="form.errors.beds">
           {{ form.errors.beds }}
         </div>
       </div>
 
-      <div>
+      <div class="col-span-2">
         <label>Baths</label>
-        <input v-model.number="form.baths" type="text" />
+        <input v-model.number="form.baths" type="text" class="input" />
         <div v-if="form.errors.baths">
           {{ form.errors.baths }}
         </div>
       </div>
 
-      <div>
+      <div class="col-span-2">
         <label>Area</label>
-        <input v-model.number="form.area" type="text" />
+        <input v-model.number="form.area" type="text" class="input" />
         <div v-if="form.errors.area">
           {{ form.errors.area }}
         </div>
       </div>
 
-      <div>
+      <div class="col-span-4">
         <label>City</label>
-        <input v-model="form.city" type="text" />
+        <input v-model="form.city" type="text" class="input" />
         <div v-if="form.errors.city">
           {{ form.errors.city }}
         </div>
       </div>
 
-      <div>
+      <div class="col-span-2">
         <label>Post Code</label>
-        <input v-model="form.code" type="text" />
+        <input v-model="form.code" type="text" class="input" />
         <div v-if="form.errors.code">
           {{ form.errors.code }}
         </div>
       </div>
 
-      <div>
+      <div class="col-span-4">
         <label>Street</label>
-        <input v-model="form.street" type="text" />
+        <input v-model="form.street" type="text" class="input" />
         <div v-if="form.errors.street">
           {{ form.errors.street }}
         </div>
       </div>
 
-      <div>
+      <div class="col-span-2">
         <label>Street Nr</label>
-        <input v-model.number="form.street_nr" type="text" />
+        <input v-model.number="form.street_nr" type="text" class="input" />
         <div v-if="form.errors.street_nr">
           {{ form.errors.street_nr }}
         </div>
       </div>
 
-      <div>
+      <div class="col-span-6">
         <label>Price</label>
-        <input v-model.number="form.price" type="text" />
+        <input v-model.number="form.price" type="text" class="input" />
         <div v-if="form.errors.price">
           {{ form.errors.price }}
         </div>
       </div>
 
-      <div>
-        <button type="submit">Edit</button>
+      <div class="col-span-6">
+        <button type="submit" class="btn-primary">Edit</button>
       </div>
     </div>
   </form>
